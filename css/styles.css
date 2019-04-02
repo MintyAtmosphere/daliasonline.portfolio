@@ -38,6 +38,8 @@ a:hover {
   transition: background-color 0.2s;
 }
 
+
+
 .CTA {
   /* background-color: aqua; */
   /* animation: color-change 1s ease infinite; */
@@ -63,7 +65,7 @@ a:hover {
 .hero {
   display: flex;
   flex-direction: column;
-  height: 77vh;
+  height: 80vh;
 }
 
 .intro {
@@ -127,7 +129,7 @@ h3 {
 
 .project {
   display: flex;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   position: relative;
   padding: 0 140px 50px 140px;
@@ -189,6 +191,13 @@ h3 {
   letter-spacing: 0.2px;
 }
 
+
+.cdc_links {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  width: 210px;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -206,12 +215,14 @@ footer a {
   border-bottom: 2px solid white;
   width: fit-content;
   padding: 0px 2px;
+  /* width: auto; */
 }
 
 footer a:hover {
   background-color: white;
   color: rgb(12, 12, 12);
 }
+
 
 h2 {
   font-family: "Kepler-Std-Display";
@@ -231,17 +242,20 @@ h2 {
   flex-direction: column;
   margin-right: 100px;
   box-sizing: border-box;
+  width: 230px;
 }
 
 .work {
   display: flex;
   flex-direction: column;
   margin-right: 100px;
+  width: 210px;
 }
 
 .social {
   display: flex;
   flex-direction: column;
+  width: 210px;
 }
 
 .farewell {
@@ -289,6 +303,13 @@ h2 {
 
 
 @media screen and (max-width: 1024px) {
+
+  nav {
+    padding: 50px 50px 70px 50px;
+  }
+  .intro {
+    margin: auto 50px;
+  }
   .project {
     flex-direction: column;
     align-items: center;
@@ -309,8 +330,8 @@ h2 {
   }
 
   .project_image img{
-    width: 100%;
-    max-height: 700px;
+    /* width: 500px; */
+    max-height: 500px;
     /* margin: 10px; */
   }
   .mouse {
@@ -326,7 +347,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
 
   nav {
     padding: 50px 30px 30px 30px;
@@ -342,7 +363,11 @@ footer {
   }
 
   .project_image img {
-    max-height: 500px;
+    max-width: 500px;
+  }
+
+  .project_description {
+    /* width: 500px; */
   }
 
   .links {
@@ -397,6 +422,10 @@ footer {
     font-size: 16px;
   }
 
+  .phone_img img {
+    max-width: 270px;
+  }
+
   footer {
     padding: 20px;
   }
@@ -421,5 +450,31 @@ footer a {
   .farewell h2 {
     font-size: 36px;
   }
+  .work{
+    width: 190px;
+  }
+
+  .social {
+    width: 100px;
+  }
+  .contact {
+    width: 200px;
+  }
 }
 
+@media screen and (max-height: 800px) {
+  .project_image img {
+    max-height: 500px;
+  }
+  .phone_img img {
+    max-width: 600px;
+  }
+  .project {
+    margin-bottom: 80px;
+  }
+
+  .hero {
+  margin-bottom: 80px;
+  }
+
+} 
