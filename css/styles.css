@@ -11,47 +11,71 @@ nav {
   /* height: 50px; */
   font-family: "Proxima Nova", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  font-size: 24px;
-  color: black;
+  font-size: 20px;
+  color: #1d1d1d;
   letter-spacing: 1px;
   display: flex;
   justify-content: flex-end;
-  padding: 50px 100px 30px 100px;
+  padding: 50px 140px 30px 140px;
 }
 
+
+
 a {
-  color: black;
+  color: #1d1d1d;
   text-decoration: none;
   margin-bottom: 2px;
   margin-right: 30px;
   box-sizing: border-box;
   padding: 0 3px;
   border-radius: 1px;
-  border-bottom: 2px black solid;
+  border-bottom: 2px #1d1d1d solid;
 }
 
 a:hover {
-  background-color: black;
+  background-color: #1d1d1d;
   color: white;
   transition: background-color 0.2s;
+}
+
+.CTA {
+  /* background-color: aqua; */
+  /* animation: color-change 1s ease infinite; */
+  /* border: 0; */
+}
+
+@keyframes color-change {
+  10% {
+    background-color: rgb(85, 172, 35);
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.CTA:hover {
+  background-color: #1d1d1d;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 77vh;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   align-items: right;
-  margin: auto 100px;
-  width: 600px;
+  margin: auto 140px;
+  width: 550px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 50px;
   font-family: "Kepler-Std-Display";
   font-weight: 600;
   margin: 0 0;
@@ -60,16 +84,16 @@ h1 {
 h3 {
   font-family: "Proxima Nova";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.2px;
   line-height: 30px;
 }
 
 .mouse {
-  width: 30px;
-  height: 50px;
+  width: 25px;
+  height: 40px;
   border-radius: 50px;
-  border: 2.2px black solid;
+  border: 2.2px #1d1d1d solid;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -78,9 +102,9 @@ h3 {
 }
 
 .dot {
-  width: 4px;
-  height: 8px;
-  background-color: black;
+  width: 3px;
+  height: 4px;
+  background-color: #1d1d1d;
   border-radius: 10px;
   animation: indicate 2s ease infinite;
 }
@@ -90,7 +114,7 @@ h3 {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(24px);
+    transform: translateY(20px);
     opacity: 0;
   }
 }
@@ -98,7 +122,7 @@ h3 {
 .dd_menu {
   position: absolute;
   z-index: 2;
-  right: 100px;
+  right: 140px;
 }
 
 .project {
@@ -106,7 +130,7 @@ h3 {
   height: 100vh;
   align-items: center;
   position: relative;
-  padding: 0 100px;
+  padding: 0 140px;
   justify-content: space-between;
 }
 
@@ -116,14 +140,15 @@ h3 {
 }
 
 .project_image img {
-  width: 80%;
-  max-height: 600px;
+  /* width: 85%; */
+  max-height: 738px;
 }
 
 .phone_img img{
   max-height: 750px;
   max-width: 80%;
   width: 1000px;
+  /* box-shadow: rgba(0, 0, 0, 0.178) 5px 6px 10px; */
 }
 /* .project:hover {
     background-color: #FFDBED;
@@ -131,25 +156,25 @@ h3 {
 } */
 
 .project_description {
-  width: 45%;
+  width: 40%;
   height: 340px;
   background-color: white;
   z-index: 1;
   position: absolute;
-  right: 100px;
-  box-shadow: rgba(0, 0, 0, 0.144) 10px 12px 20px;
+  right: 140px;
+  box-shadow: rgba(0, 0, 0, 0.178) 10px 12px 20px;
   padding: 40px;
   box-sizing: border-box;
 }
 
 .project_description a {
   font-family: "Proxima Nova";
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 1px;
 }
 
 .toLeft {
-  left: 100px;
+  left: 140px;
 }
 
 .reverse {
@@ -167,15 +192,16 @@ h3 {
 footer {
   display: flex;
   flex-direction: row;
-  padding: 50px 100px;
+  padding: 50px 120px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.99);
+  background-color: #1d1d1d;
   position: relative;
+  margin-top: 30px;
 }
 
 footer a {
   font-family: "Proxima Nova";
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   border-bottom: 2px solid white;
   width: fit-content;
@@ -196,6 +222,10 @@ h2 {
   letter-spacing: 0.7px;
 }
 
+.links {
+  display: flex;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -214,11 +244,48 @@ h2 {
   flex-direction: column;
 }
 
+.farewell {
+  display: flex;
+  flex-direction: column;
+  right: 140px;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+}
 
+.farewell p {
+  color: white; 
+  font-family: 'Proxima Nova','Franklin Gothic Medium', Arial, sans-serif;  
+  font-size: 20px; 
+  margin: 0;
+}
 
 .farewell h2 {
   color: white;
+  margin: 0;
+  display: flex;
+  align-content: flex-end;
+  
 }
+
+
+@media screen and (max-width: 1400px) {
+  
+  footer {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .farewell {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;
+    margin-top: 80px;
+  }
+}
+
+
 
 
 @media screen and (max-width: 1024px) {
@@ -249,6 +316,9 @@ h2 {
   .mouse {
     display: none;
   }
+  .farewell {
+    align-items: center;
+  }
 
 footer {
   flex-direction: column;
@@ -275,51 +345,67 @@ footer {
     max-height: 500px;
   }
 
-  .footer {
-    
+  .links {
+    flex-direction: column;
   }
+    
 }
 
 @media screen and (max-width: 460px) {
+
+
+  nav {
+    font-size: 16px;
+    padding: 30px 20px;
+  }
 
   .intro {
     width: 75%;
   }
 
   .intro h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .intro h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
+  .project {
+    padding: 30px 20px;
+
+  }
   .project_image img {
-    max-height: 300px;
+    max-height: 230px;
   }
 
-  .project_description{
-    padding: 20px;
-    height: 330px;
+  .project_description {
+    padding: 20px 20px 50px 20px;
+    height: auto;
   }
   
   .project_description h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .project_description h3 {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .project_description a {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 20px;
   }
 
 footer h2 {
   font-size: 36px;
 }
 footer a {
-  font-size: 20px;
+  font-size: 16px;
 }
 
   .farewell{
@@ -327,13 +413,13 @@ footer a {
     right: auto;
     bottom: auto;
   }
+
+  .farewell p {
+    font-size: 16px;
+  }
+
+  .farewell h2 {
+    font-size: 36px;
+  }
 }
 
-.farewell {
-  display: flex;
-  align-content: flex-end;
-  right: 100px;
-  position: absolute;
-  right: 100px;
-  bottom: 50px;
-}
