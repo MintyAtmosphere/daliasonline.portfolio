@@ -297,6 +297,14 @@ h2 {
     align-items: flex-end;
     margin-top: 80px;
   }
+
+  .project_image img{
+    max-height: 600px;
+  }
+  
+  .phone_image img{
+    max-width: 500px;
+  }
 }
 
 
@@ -330,7 +338,7 @@ h2 {
   }
 
   .project_image img{
-    /* width: 500px; */
+    /* max-width: 600px; */
     max-height: 500px;
     /* margin: 10px; */
   }
