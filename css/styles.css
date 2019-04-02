@@ -9,7 +9,7 @@ body {
 
 nav {
   /* height: 50px; */
-  font-family: "Proxima Nova", "Franklin Gothic Medium", "Arial Narrow", Arial,
+  font-family: "Proxima Nova", Helvetica, sans-serif;
     sans-serif;
   font-size: 20px;
   color: #1d1d1d;
@@ -171,7 +171,7 @@ h3 {
 }
 
 .project_description a {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", Helvetica, sans-serif;
   font-size: 20px;
   border-radius: 1px;
 }
@@ -210,7 +210,7 @@ footer {
 }
 
 footer a {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", Helvetica, sans-serif;
   font-size: 20px;
   color: white;
   border-bottom: 2px solid white;
@@ -226,7 +226,7 @@ footer a:hover {
 
 
 h2 {
-  font-family: "Kepler-Std-Display";
+  font-family: "Kepler-Std-Display", Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -270,7 +270,7 @@ h2 {
 
 .farewell p {
   color: white; 
-  font-family: 'Proxima Nova','Franklin Gothic Medium', Arial, sans-serif;  
+  font-family: 'Proxima Nova', helvetica, sans-serif;  
   font-size: 20px; 
   margin: 0;
 }
