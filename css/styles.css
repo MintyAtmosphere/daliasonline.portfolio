@@ -76,13 +76,13 @@ a:hover {
 
 h1 {
   font-size: 50px;
-  font-family: "Kepler-Std-Display";
+  font-family: "Kepler-Std-Display", Georgia, 'Times New Roman', Times, serif;
   font-weight: 600;
   margin: 0 0;
 }
 
 h3 {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.2px;
@@ -130,7 +130,7 @@ h3 {
   height: 100vh;
   align-items: center;
   position: relative;
-  padding: 0 140px;
+  padding: 0 140px 50px 140px;
   justify-content: space-between;
 }
 
