@@ -590,6 +590,11 @@ footer {
   
   .project_image img {
     max-height: 300px;
+    width: auto;
+  }
+
+  .phone_img img {
+    max-height: 320px;
   }
 
   .project_description {
