@@ -590,7 +590,7 @@ footer {
   
   .project_image img {
     max-height: 300px;
-    width: auto;
+    width: 100%;
   }
 
   .phone_img img {
