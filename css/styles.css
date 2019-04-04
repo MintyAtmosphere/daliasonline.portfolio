@@ -3,22 +3,20 @@ html {
 }
 body {
   margin: 0;
-  padding: 0;
   transition: background 1s ease;
 }
 
 nav {
   /* height: 50px; */
   font-family: "Proxima Nova", Helvetica, sans-serif;
-    sans-serif;
   font-size: 20px;
   color: #1d1d1d;
   letter-spacing: 1px;
   display: flex;
   justify-content: flex-end;
-  padding: 50px 140px 30px 140px;
+  padding-top: 50px;
+  padding-right: 140px;
 }
-
 
 
 a {
@@ -39,23 +37,8 @@ a:hover {
 }
 
 
-
 .CTA {
-  /* background-color: aqua; */
-  /* animation: color-change 1s ease infinite; */
-  /* border: 0; */
-}
-
-@keyframes color-change {
-  10% {
-    background-color: rgb(85, 172, 35);
-  }
-  50% {
-    background-color: red;
-  }
-  100% {
-    background-color: blue;
-  }
+  margin-right: 0;
 }
 
 
@@ -63,7 +46,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   height: 80vh;
-  padding: 150px 140px 100px 140px;
+  padding: 140px 140px;
   justify-content: space-between;
 }
 
@@ -71,19 +54,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: right;
-  /* margin: auto 140px; */
   width: 600px;
 }
 
-.intro-image {
-  /* width: 500px; */
-  /* display: flex; */
-}
 
 .intro-image img {
   width: 490px;
   border-radius: 2px;
-  /* justify-content: center; */
 
 }
 
@@ -147,10 +124,8 @@ h3 {
   height: 100%;
   align-items: center;
   position: relative;
-  padding: 0 140px 50px 140px;
   justify-content: space-between;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding: 50px 140px;
 }
 
 
@@ -168,12 +143,7 @@ h3 {
   max-height: 750px;
   max-width: 80%;
   width: 1000px;
-  /* box-shadow: rgba(0, 0, 0, 0.178) 5px 6px 10px; */
 }
-/* .project:hover {
-    background-color: #FFDBED;
-    transition: background-color 2s ease;
-} */
 
 .project_description {
   width: 40%;
@@ -222,7 +192,6 @@ h3 {
 .skills {
   background-color: rgb(255, 255, 255);
   padding: 50px 140px;
-  margin: 0;
 }
 
 .skills h1 {
@@ -308,12 +277,11 @@ h3 {
 footer {
   display: flex;
   flex-direction: row;
-  padding: 50px 120px 250px 120px;
   box-sizing: border-box;
   background-color: #1d1d1d;
   position: relative;
-  /* margin-top: 30px; */
   border-top: 3px solid black;
+  padding: 50px 140px;
 }
 
 footer a {
@@ -435,44 +403,63 @@ h2 {
 @media screen and (max-width: 1024px) {
 
   nav {
-    padding: 50px 50px 70px 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+  }
+
+  .hero {
+    padding: 180px 50px;
+    /* padding-top: 190px; */
+    height: auto;
   }
   .intro {
-    margin: auto 50px;
+    /* margin: auto 50px; */
   }
 
   .intro-image img {
-    display: none;
+    width: 250px;
   }
   .project {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    padding: 30px 50px;
+    padding: 50px 50px;
     height: auto;
   }
 
   .project_description {
-    position: initial;
-    width: 80%;
+    position: absolute;
+    width: 40%;
     margin-top: 10px;
+    right: 50px;
+    padding: 20px;
 
+  }
+
+  .toLeft {
+    left: 50px;
   }
   .project_image {
     align-self: center;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .project_image img{
-    /* max-width: 600px; */
-    max-height: 500px;
-    /* margin: 10px; */
+    max-height: 550px;
+  }
+
+  .phone_img img {
+    max-height: 600px;
   }
   .mouse {
     display: none;
   }
   .farewell {
     align-items: center;
+  }
+
+  .skills {
+    padding: 50px 50px;
   }
 
 footer {
@@ -488,11 +475,11 @@ footer {
   }
 
   .hero{
-    padding: 50px;
+    padding: 100px 30px;
+    height: auto;
   }
   .intro{
-    width: 60%;
-    /* margin: auto 30px; */
+    width: 75%;
   }
 
   .intro-image img {
@@ -500,25 +487,67 @@ footer {
   }
 
   .project {
-    padding: 30px 30px;
+    padding: 50px 30px;
 
   }
 
   .project_image img {
-    max-width: 500px;
+    max-height: 400px;
+  }
+
+  .phone_img img {
+    max-height: 500px;
   }
 
   .project_description {
-    width: 60%;
+    width: 43%;
+    right: 30px;
+  }
+
+  .toLeft {
+    left: 30px;
   }
 
   .links {
     flex-direction: column;
   }
+
+  .skills{
+    padding: 50px 30px;
+  }
   .skills h1 {
-    width: 500px;
+    width: 550px;
+  }
+
+  footer {
+    padding: 50px 30px;
   }
     
+}
+
+@media screen and (max-width: 700px) {
+  .project{
+    flex-direction: column;
+    position: initial;
+  }
+
+  .project_image img {
+    width: 100%;
+    max-height: 500px;
+    justify-content: center;
+
+  }
+
+  .phone_img {
+    justify-content: center;
+  }
+
+  .project_description{
+    position: relative;
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -529,8 +558,20 @@ footer {
     padding: 30px 20px;
   }
 
+  .nav a {
+    margin-right: 12px;
+  }
+
+  .cta {
+    margin: 0;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
   .intro {
-    width: 85%;
+    width: 80%;
   }
 
   .intro h1 {
@@ -541,20 +582,20 @@ footer {
     font-size: 16px;
   }
 
+  .project {
+    padding: 50px 20px;
+  }
+
 
   
-  .project {
-    padding: 30px 20px;
-
-  }
   .project_image img {
-    max-height: 230px;
+    max-height: 300px;
   }
 
   .project_description {
     padding: 20px 20px 50px 20px;
     height: auto;
-    width: 60%;
+    width: 100%;
   }
   
   .project_description h1 {
@@ -583,6 +624,10 @@ footer h2 {
 }
 footer a {
   font-size: 16px;
+}
+
+.links div {
+  margin: 0;
 }
 
   .farewell{
@@ -636,6 +681,7 @@ footer a {
 
   .sec {
     width: 100%;
+    margin: 0;
   }
 }
 
