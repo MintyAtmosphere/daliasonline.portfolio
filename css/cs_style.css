@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    font-family: 'Proxima Nova', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'proxima-nova', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: black;
     letter-spacing: 1px;
@@ -30,7 +30,13 @@ nav {
 
 nav a {
     border-bottom: 2px solid black;
+    padding: 5px 5px 3px 5px;
 }
+
+.nav span {
+    padding-bottom: 2px;
+    font-size: 19px;
+  }
 
 .back-link a{
     border-bottom: 0;
@@ -100,6 +106,8 @@ a {
     box-sizing: border-box;
     padding: 0 6px;
     border-radius: 1px;
+    padding: 5px 5px 3px 5px;
+
 }
 
 a:hover { 
@@ -132,7 +140,7 @@ h1 {
 }
 
 h3 {
-    font-family: 'Proxima Nova';
+    font-family: 'proxima-nova', Helvetica, sans-serif;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0px;
@@ -140,7 +148,7 @@ h3 {
 }
 
 p {
-    font-family: 'Proxima Nova';
+    font-family: 'proxima-nova' , Helvetica, sans-serif;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0px;
@@ -149,7 +157,7 @@ p {
 }
 
 .case_study ul {
-    font-family: 'Proxima Nova';
+    font-family: 'proxima-nova' , Helvetica, sans-serif;
     font-size:20px;
 }
 
@@ -165,12 +173,13 @@ footer {
   }
   
   footer a {
-    font-family: "Proxima Nova", Helvetica, sans-serif;
+    font-family: "proxima-nova", Helvetica, sans-serif;
     font-size: 20px;
     color: white;
     border-bottom: 1px solid white;
     width: fit-content;
-    padding: 0px 2px;
+    /* padding: 0px 2px; */
+    padding: 3px 3px 3px 3px;
     /* width: auto; */
   }
   
@@ -205,7 +214,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
-    width: 210px;
+    width: 260px;
   }
   
   .social {
@@ -225,7 +234,7 @@ footer {
   
   .farewell p {
     color: white; 
-    font-family: 'Proxima Nova', helvetica, sans-serif;  
+    font-family: 'proxima-nova', helvetica, sans-serif;  
     font-size: 20px; 
     margin: 0;
   }
