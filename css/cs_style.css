@@ -2,22 +2,39 @@ body {
     background-color:white;
     margin: 0;
     padding: 0;
+    /* background-color: #b59f82; */
 
 }
 
 nav {
     font-family: 'Proxima Nova', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     letter-spacing: 1px;
     display: flex;
-    justify-content: flex-end;
-    padding: 20px 100px 20px 100px;
+    justify-content: space-between;
+    padding: 40px 140px 35px 140px;
 
+}
+
+
+.back-link {
+    display: flex;
+    
+    
+}
+
+.back-link img {
+    width: 55px;
 }
 
 nav a {
     border-bottom: 2px solid black;
+}
+
+.back-link a{
+    border-bottom: 0;
+    
 }
 
 header {
@@ -45,14 +62,35 @@ header {
 .progress-container {
     width: 100%;
     height: 15px;
-    background: rgb(240, 240, 240);
-  }
+    /* background: rgb(240, 240, 240);  */
+    border-top: 2px solid #1d1d1d;
+    border-bottom: 2px solid #1d1d1d;
+}
 
   .progress-bar {
     height: 15px;
-    background-image: linear-gradient(to right, red, yellow);
+    /* background-image: linear-gradient(to right, red, yellow); */
+    /* background-color: #b59f82; */
     width: 0%;
   }
+  
+  .brown-color {
+    background-color: #b59f82;  
+}
+
+.massive_act_color {
+    background-color: #edc2ed;
+
+
+}
+
+.shelter_match_color {
+    background-color: #efe8a2;
+}
+
+.kawaii_tarot_color {
+    background-color: #c7aaed;
+}
 
 a {
     color: black;
@@ -75,6 +113,7 @@ a:hover {
     padding: 200px 100px;
     position: relative;
     box-sizing: border-box;
+    background-color: white;
 }
 
 
@@ -82,7 +121,7 @@ a:hover {
     border-bottom: black solid 2px;
 }
 h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Kepler-Std-Display';
     font-weight: 600;
     margin: 0 0;
@@ -91,7 +130,7 @@ h1 {
 h3 {
     font-family: 'Proxima Nova';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 0px;
     line-height: 30px;
 }
@@ -99,7 +138,7 @@ h3 {
 p {
     font-family: 'Proxima Nova';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 0px;
     line-height: 30px;
 
@@ -107,7 +146,7 @@ p {
 
 .case_study ul {
     font-family: 'Proxima Nova';
-    font-size:24px;
+    font-size:20px;
 }
 
 footer {
@@ -179,11 +218,20 @@ img {
 
     nav {
         padding: 20px 50px;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
     }
     .case_study{ 
         width: 90%;
         padding: 200px 50px;
 
+    }
+
+    .reg-nav{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
     }
 
     footer {
@@ -195,7 +243,7 @@ img {
 
 @media screen and (max-width: 650px) {
     nav {
-        padding: 20px 30px;
+        padding: 20px 20px;
     }
 
 
@@ -209,15 +257,35 @@ img {
 }
 
 @media screen and (max-width: 460px) {
+    nav {
+        padding: 10px 10px;
+    }
 
+    nav a{
+        font-size: 16px;
+
+    }
+
+    .back-link {
+        font-size: 14px;
+    }
+
+    .reg-nav {
+        display: flex;
+
+    }
+
+    .reg-nav a {
+        flex-direction: column;
+    }
     .case_study h1 {  
-        font-size: 36px;
+        font-size: 32px;
 
 
     }
 
     .case_study p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 
