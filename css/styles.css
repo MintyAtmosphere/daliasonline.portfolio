@@ -19,20 +19,16 @@ nav {
   /* background-color: white; */
 }
 
-.texture {
+/* .texture {
   background-image: url(../img/white-waves.png);
   opacity: .25;
   height: 100%;
   width: 100%;
   background-repeat: repeat;
-  /* position: static; */
   z-index: 0;
-  /* background-attachment: fixed; */
   position: fixed;
   display: block;
-  /* background-size: cover; */
-  /* position: static; */
-}
+} */
 
 a {
   color: #1d1d1d;
