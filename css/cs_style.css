@@ -120,6 +120,10 @@ a:hover {
 .case_study a {
     border-bottom: black solid 2px;
 }
+
+.case_study img {
+    width: 100%;
+}
 h1 {
     font-size: 40px;
     font-family: 'Kepler-Std-Display';
@@ -149,71 +153,94 @@ p {
     font-size:20px;
 }
 
+
 footer {
     display: flex;
     flex-direction: row;
-    padding: 50px 100px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.99);
-}
-
-footer a {
-    font-family: 'Proxima Nova';
-    font-size: 24px;
-    color: white;
-    padding: 0px 2px;
-    width: fit-content;
-    border-bottom: 2px solid white;
-}
-
-footer a:hover { 
-    background-color: white;
-    color: black;
-    
+    background-color: #1d1d1d;
+    position: relative;
+    border-top: 3px solid black;
+    padding: 50px 140px;
   }
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-    box-sizing: border-box;
-    
-}
-
-.work {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-    
-}
-
-.social {
-    display: flex;
-    flex-direction: column;
-}
-
-h2 {
-    font-family: 'Kepler-Std-Display';
+  
+  footer a {
+    font-family: "Proxima Nova", Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    padding: 0px 2px;
+    /* width: auto; */
+  }
+  
+  footer a:hover {
+    background-color: white;
+    color: rgb(12, 12, 12);
+  }
+  
+  
+  h2 {
+    font-family: "Kepler-Std-Display", Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
-    color:rgb(205, 204, 221);
-    letter-spacing: 1.5px;
-}
-
-img {
-    width: 100%;
-}
-
-.farewell {
-    position: fixed;
-    right: 100px;
+    color: rgb(205, 204, 221);
+    letter-spacing: 0.7px;
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    box-sizing: border-box;
+    width: 230px;
+  }
+  
+  .work {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    width: 210px;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+  }
+  
+  .farewell {
+    display: flex;
+    flex-direction: column;
+    right: 140px;
+    position: absolute;
     bottom: 50px;
-}
+    text-align: center;
+  }
+  
+  .farewell p {
+    color: white; 
+    font-family: 'Proxima Nova', helvetica, sans-serif;  
+    font-size: 20px; 
+    margin: 0;
+  }
+  
+  .farewell h2 {
+    color: white;
+    margin: 0;
+    display: flex;
+    align-content: flex-end;
+    
+  }
 
 
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1460px) {
 
 
     nav {
@@ -238,6 +265,34 @@ img {
         flex-direction: column;
         padding: 50px 50px;
       }
+
+      .farewell {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        align-items: flex-end;
+        margin-top: 80px;
+      }
+
+      
+}
+
+@media screen and (max-width: 900px) {
+    .links {
+        flex-direction: column;
+      }
+    
+      .skills{
+        padding: 50px 30px;
+      }
+      .skills h1 {
+        width: 550px;
+      }
+    
+      footer {
+        padding: 50px 30px;
+      }
+
 }
 
 
@@ -290,12 +345,41 @@ img {
 
 
     footer {
-        padding: 30px;
-    }
+        padding: 20px;
+      }
+    
     footer h2 {
+      font-size: 36px;
+    }
+    footer a {
+      font-size: 16px;
+    }
+    
+    .links div {
+      margin: 0;
+    }
+    
+      .farewell{
+        position: relative;
+        right: auto;
+        bottom: auto;
+      }
+    
+      .farewell p {
+        font-size: 16px;
+      }
+    
+      .farewell h2 {
         font-size: 36px;
       }
-      footer a {
-        font-size: 20px;
+      .work{
+        width: 190px;
+      }
+    
+      .social {
+        width: 100px;
+      }
+      .contact {
+        width: 200px;
       }
 }
