@@ -8,26 +8,42 @@ body {
 }
 
 nav {
-  font-family: 'Proxima Nova', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'proxima-nova', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
-  color: #1d1d1d;
+  color: black;
   letter-spacing: 1px;
   display: flex;
-  justify-content: flex-end;
-  padding: 20px 100px 20px 100px;
+  justify-content: space-between;
+  padding: 40px 140px 35px 140px;
 
+}
+
+
+.back-link {
+  display: flex;
+  
+  
+}
+
+.back-link img {
+  width: 55px;
 }
 
 nav a {
-  border-bottom: 2px solid #1d1d1d;
+  border-bottom: 2px solid black;
+  padding: 5px 5px 3px 5px;
 }
-#navbar {
-  /* overflow: hidden; */
-  background-color:white;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+
+.nav span {
+  padding-bottom: 2px;
+  font-size: 19px;
 }
+
+.back-link a{
+  border-bottom: 0;
+  
+}
+
 
 p {
   font-family: 'Proxima Nova';
