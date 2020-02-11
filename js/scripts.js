@@ -50,10 +50,10 @@ $(window).scroll(function() {
     var color = $(project2).attr("data-background-color");
     $body.css("background-color", color);
   }
-  if (project3.isOnScreen()) {
-    var color = $(project3).attr("data-background-color");
-    $body.css("background-color", color);
-  }
+  // if (project3.isOnScreen()) {
+  //   var color = $(project3).attr("data-background-color");
+  //   $body.css("background-color", color);
+  // }
   if (project4.isOnScreen()) {
     var color = $(project4).attr("data-background-color");
     $body.css("background-color", color);

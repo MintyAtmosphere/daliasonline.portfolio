@@ -45,13 +45,13 @@ a {
 
 a:hover {
   background-color: #1d1d1d;
-  color: white;
+  color: #FAFAF5;
   transition: background-color 0.2s;
 }
 
 a:focus {
   background-color: #1d1d1d;
-  color: white;
+  color: #FAFAF5;
   transition: background-color 0.2s;
 }
 
@@ -72,13 +72,13 @@ a:focus {
   padding: 140px 140px;
   justify-content: space-between;
   z-index: 1;
-  /* background-color: white; */
+  /* background-color: #FAFAF5; */
   
 }
 
 .hero a:focus {
     background-color: #1d1d1d;
-    color: white;
+    color: #FAFAF5;
     transition: background-color 0.2s;
   }
 }
@@ -186,7 +186,7 @@ h3 {
 .project_description {
   width: 40%;
   height: 340px;
-  background-color: white;
+  background-color: #FAFAF5;
   z-index: 1;
   position: absolute;
   right: 140px;
@@ -228,7 +228,7 @@ h3 {
 
 
 .skills {
-  background-color: white;
+  background-color: #FAFAF5;
   padding: 50px 140px;
   border-top: #1d1d1d 2px solid;
   z-index: 3;
@@ -263,15 +263,26 @@ h3 {
   width: 50%;
 }
 
-.icon img {
-  /* width: 50%; */
-  height: 50%;
-  transition: height 2s ease;
+
+.design_icon {
+  width: 100px;
+}
+
+.teaching_icon {
+  width: 100px;
+}
+
+.code_icon {
+  width: 120px;
+}
+
+.speaking_icon {
+  width: 70px;
 }
 
 .icon {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  /* width: auto; */
   justify-content: center;
   align-items: center;
   display: flex;
@@ -279,41 +290,7 @@ h3 {
   
 }
 
-.icon img:hover {
-  /* height: 55%; */
 
-  /* animation: rotate 2s ease 1; */
-  /* background-color: rgb(220, 220, 230); */
-  /* box-shadow: #858585a4 2px 2px 10px; */
-  /* border-radius: 90px; */
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  20% {
-    transform: rotate(5deg);
-  }
-  40% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(5deg);
-  }
-
-  70% {
-    transform: rotate(0deg);
-  }
-  90% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(-10deg);
-  }
-}
 footer {
   display: flex;
   flex-direction: row;
@@ -328,8 +305,8 @@ footer {
 footer a {
   font-family: "proxima-nova", Helvetica, sans-serif;
   font-size: 20px;
-  color: white;
-  border-bottom: 1px solid white;
+  color: #FAFAF5;
+  border-bottom: 1px solid #FAFAF5;
   width: fit-content;
   padding: 3px 3px 3px 3px;
   /* padding: 0px 2px; */
@@ -337,12 +314,12 @@ footer a {
 }
 
 footer a:hover {
-  background-color: white;
+  background-color: #FAFAF5;
   color: rgb(12, 12, 12);
 }
 
 footer a:focus {
-  background-color: white;
+  background-color: #FAFAF5;
   color: rgb(12, 12, 12);
 }
 
@@ -352,7 +329,7 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: rgb(205, 204, 221);
+  color: #B6B6B3;
   letter-spacing: 0.7px;
 }
 
